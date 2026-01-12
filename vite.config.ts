@@ -22,7 +22,12 @@ export default defineConfig(({ mode }) => {
       build: {
         assetsDir: 'assets',
         copyPublicDir: true,
-        publicDir: 'public'
+        publicDir: 'public',
+        rollupOptions: {
+          output: {
+            assetFileNames: 'assets/[name].[hash][extname]'
+          }
+        }
       }
     };
 });
