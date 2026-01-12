@@ -8,7 +8,7 @@ const books: Book[] = [
     label: 'Book One',
     title: 'Finding the Secret Scrolls',
     description: 'Leon\'s journey begins as he\'s cast through the mysterious sleep chamber vortex into a chaotic world. He meets his first masters and discovers the genetic imprinting that holds the key to hidden knowledge.',
-    imageUrl: '/images/finding the secret scrolls.jpg',
+    imageUrl: '/images/finding-secret-scrolls.jpg',
     amazonUrl: 'https://www.amazon.com/Mystical-Chaos-Journey-Sean-Hamilton/dp/1733822313'
   },
   {
@@ -16,7 +16,7 @@ const books: Book[] = [
     label: 'Book Two',
     title: 'Out of the Elemental Field',
     description: 'Leon delves deeper into the old methods and hidden knowledge. He learns brain function activities, self-healing techniques, and begins to understand the true scope of his latent powers.',
-    imageUrl: '/images/out of the elemental field.jpg',
+    imageUrl: '/images/out-of-elemental-field.jpg',
     amazonUrl: 'https://www.amazon.com/Mystical-Chaos-Journey-Sean-Hamilton/dp/1733822313'
   },
   {
@@ -24,7 +24,7 @@ const books: Book[] = [
     label: 'Book Three',
     title: 'Seven Wise Sages',
     description: 'The culmination of Leon\'s training as he masters survival skills, advanced healing techniques, and unlocks the full potential of his genetic imprinting. The answers to how and why he came to this world are finally revealed.',
-    imageUrl: '/images/seven wise sages.jpg',
+    imageUrl: '/images/seven-wise-sages.jpg',
     amazonUrl: 'https://www.amazon.com/Mystical-Chaos-Journey-Sean-Hamilton/dp/1733822313'
   },
   {
@@ -32,7 +32,7 @@ const books: Book[] = [
     label: 'Book Four',
     title: 'The Temple of Hidden Knowledge',
     description: 'Leon\'s ultimate test awaits as he enters the ancient temple where all knowledge converges. The final secrets of the mystical chaos are revealed, and his true purpose becomes clear.',
-    imageUrl: '/images/the temple of hidden knowledge.jpg',
+    imageUrl: '/images/temple-of-hidden-knowledge.jpg',
     amazonUrl: 'https://www.amazon.com/Mystical-Chaos-Journey-Sean-Hamilton/dp/1733822313'
   }
 ];
