@@ -114,10 +114,10 @@ const BookCollection: React.FC = () => {
 
         <div 
           ref={scrollContainerRef}
-          className="flex overflow-x-auto gap-8 pb-10 no-scrollbar snap-x"
+          className="flex overflow-x-auto gap-8 pb-10 no-scrollbar snap-x md:flex-row flex-col"
         >
           {books.map((book) => (
-            <div key={book.id} className="min-w-[300px] md:min-w-[380px] snap-center group">
+            <div key={book.id} className="min-w-[300px] md:min-w-[380px] snap-center group md:min-w-0 w-full">
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl transition-transform duration-500 group-hover:-translate-y-4">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10"></div>
                 {book.status === 'coming-soon' && (
