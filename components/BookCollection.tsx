@@ -6,16 +6,16 @@ const books: Book[] = [
   {
     id: '1',
     label: 'Book One',
-    title: 'Finding the Secret Scrolls',
+    title: 'Mystical Chaos: The Journey Begins',
     description: 'Cast through the sleep chamber vortex into a world of chaos and mystery. Join Leon as he meets his first masters and discovers the genetic imprinting that holds the key to ancient knowledge and hidden powers.',
-    imageUrl: '/images/finding-secret-scrolls.jpg',
+    imageUrl: '/images/mystical-chaos-the-journey-begins.png',
     amazonUrl: 'https://www.amazon.com/Mystical-Chaos-Journey-Sean-Hamilton/dp/1733822313',
     status: 'available'
   },
   {
     id: '2',
     label: 'Book Two',
-    title: 'Out of the Elemental Field',
+    title: 'MYSTICAL CHAOS: Out of the Elemental Field',
     description: 'Coming soon: Leon delves deeper into the old methods and hidden knowledge. He learns brain function activities, self-healing techniques, and begins to understand the true scope of his latent powers.',
     imageUrl: '/images/out-of-elemental-field.jpg',
     amazonUrl: '#',
@@ -24,7 +24,7 @@ const books: Book[] = [
   {
     id: '3',
     label: 'Book Three',
-    title: 'Seven Wise Sages',
+    title: 'MYSTICAL CHAOS: Seven Wise Sages',
     description: 'Coming soon: The culmination of Leon\'s training as he masters survival skills, advanced healing techniques, and unlocks the full potential of his genetic imprinting.',
     imageUrl: '/images/seven-wise-sages.jpg',
     amazonUrl: '#',
@@ -33,9 +33,45 @@ const books: Book[] = [
   {
     id: '4',
     label: 'Book Four',
-    title: 'The Temple of Hidden Knowledge',
+    title: 'MYSTICAL CHAOS: The Temple of Hidden Knowledge',
     description: 'Coming soon: Leon\'s ultimate test awaits as he enters the ancient temple where all knowledge converges. The final secrets of the mystical chaos are revealed.',
     imageUrl: '/images/temple-of-hidden-knowledge.jpg',
+    amazonUrl: '#',
+    status: 'coming-soon'
+  },
+  {
+    id: '5',
+    label: 'Book Five',
+    title: 'MYSTICAL CHAOS: Controlling the Elements',
+    description: 'Coming soon: Leon masters the fundamental forces of nature as he learns to control earth, air, fire, and water through ancient techniques and mental discipline.',
+    imageUrl: '/images/controlling-the-elements.jpg',
+    amazonUrl: '#',
+    status: 'coming-soon'
+  },
+  {
+    id: '6',
+    label: 'Book Six',
+    title: 'MYSTICAL CHAOS: Sword of Truth',
+    description: 'Coming soon: The path of the warrior reveals itself as Leon discovers that true strength comes from mastering both the blade and the mind.',
+    imageUrl: '/images/sword-of-truth.jpg',
+    amazonUrl: '#',
+    status: 'coming-soon'
+  },
+  {
+    id: '7',
+    label: 'Book Seven',
+    title: 'MYSTICAL CHAOS: The Great Awakening',
+    description: 'Coming soon: Leon\'s consciousness expands beyond physical limits as he unlocks the dormant abilities within his genetic imprinting.',
+    imageUrl: '/images/the-great-awakening.jpg',
+    amazonUrl: '#',
+    status: 'coming-soon'
+  },
+  {
+    id: '8',
+    label: 'Book Eight',
+    title: 'MYSTICAL CHAOS: The Way Back Home',
+    description: 'Coming soon: The final journey begins as Leon discovers the truth about his origins and the path that leads back to his own world.',
+    imageUrl: '/images/the-way-back-home.jpg',
     amazonUrl: '#',
     status: 'coming-soon'
   }
@@ -106,12 +142,12 @@ const BookCollection: React.FC = () => {
                 </p>
                 {book.status === 'available' ? (
                   <a 
-                    className="text-primary font-bold flex items-center gap-2 hover:gap-3 transition-all" 
+                    className="text-primary font-bold flex items-center gap-2 hover:gap-3 transition-all text-lg" 
                     href={book.amazonUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Get Your Copy on Amazon <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                    Buy Now on Amazon <span className="material-symbols-outlined text-sm">shopping_cart</span>
                   </a>
                 ) : (
                   <span className="text-slate-400 font-medium flex items-center gap-2">
