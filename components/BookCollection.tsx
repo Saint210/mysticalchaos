@@ -6,7 +6,7 @@ const books: Book[] = [
   {
     id: '1',
     label: 'Book One',
-    title: 'Mystical Chaos: Finding the Secret Scrolls',
+    title: 'Finding the Secret Scrolls',
     description: 'Cast through the sleep chamber vortex into a world of chaos and mystery. Join Leon as he meets his first masters and discovers the genetic imprinting that holds the key to ancient knowledge and hidden powers.',
     imageUrl: '/images/finding-secret-scrolls.jpg',
     amazonUrl: 'https://www.amazon.com/Mystical-Chaos-Journey-Sean-Hamilton/dp/1733822313',
