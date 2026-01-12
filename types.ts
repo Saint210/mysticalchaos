@@ -6,6 +6,7 @@ export interface Book {
   description: string;
   imageUrl: string;
   amazonUrl: string;
+  status?: 'available' | 'coming-soon';
 }
 
 export interface ValueCard {
