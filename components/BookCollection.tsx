@@ -6,33 +6,9 @@ const books: Book[] = [
   {
     id: '1',
     label: 'Book One',
-    title: 'Finding the Secret Scrolls',
-    description: 'Leon\'s journey begins as he\'s cast through the mysterious sleep chamber vortex into a chaotic world. He meets his first masters and discovers the genetic imprinting that holds the key to hidden knowledge.',
+    title: 'Mystical Chaos: Finding the Secret Scrolls',
+    description: 'Cast through the sleep chamber vortex into a world of chaos and mystery. Join Leon as he meets his first masters and discovers the genetic imprinting that holds the key to ancient knowledge and hidden powers.',
     imageUrl: '/images/finding-secret-scrolls.jpg',
-    amazonUrl: 'https://www.amazon.com/Mystical-Chaos-Journey-Sean-Hamilton/dp/1733822313'
-  },
-  {
-    id: '2',
-    label: 'Book Two',
-    title: 'Out of the Elemental Field',
-    description: 'Leon delves deeper into the old methods and hidden knowledge. He learns brain function activities, self-healing techniques, and begins to understand the true scope of his latent powers.',
-    imageUrl: '/images/out-of-elemental-field.jpg',
-    amazonUrl: 'https://www.amazon.com/Mystical-Chaos-Journey-Sean-Hamilton/dp/1733822313'
-  },
-  {
-    id: '3',
-    label: 'Book Three',
-    title: 'Seven Wise Sages',
-    description: 'The culmination of Leon\'s training as he masters survival skills, advanced healing techniques, and unlocks the full potential of his genetic imprinting. The answers to how and why he came to this world are finally revealed.',
-    imageUrl: '/images/seven-wise-sages.jpg',
-    amazonUrl: 'https://www.amazon.com/Mystical-Chaos-Journey-Sean-Hamilton/dp/1733822313'
-  },
-  {
-    id: '4',
-    label: 'Book Four',
-    title: 'The Temple of Hidden Knowledge',
-    description: 'Leon\'s ultimate test awaits as he enters the ancient temple where all knowledge converges. The final secrets of the mystical chaos are revealed, and his true purpose becomes clear.',
-    imageUrl: '/images/temple-of-hidden-knowledge.jpg',
     amazonUrl: 'https://www.amazon.com/Mystical-Chaos-Journey-Sean-Hamilton/dp/1733822313'
   }
 ];
@@ -53,31 +29,15 @@ const BookCollection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-10">
         <div className="flex items-end justify-between mb-10">
           <div>
-            <span className="text-primary font-bold uppercase tracking-widest text-sm">The Collection</span>
-            <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white whimsical-serif mt-2">Begin the Journey</h2>
-          </div>
-          <div className="hidden md:flex gap-2">
-            <button 
-              onClick={() => scroll('left')}
-              className="p-2 rounded-full border border-slate-200 dark:border-white/10 hover:bg-primary hover:text-white transition-all"
-            >
-              <span className="material-symbols-outlined">chevron_left</span>
-            </button>
-            <button 
-              onClick={() => scroll('right')}
-              className="p-2 rounded-full border border-slate-200 dark:border-white/10 hover:bg-primary hover:text-white transition-all"
-            >
-              <span className="material-symbols-outlined">chevron_right</span>
-            </button>
+            <span className="text-primary font-bold uppercase tracking-widest text-sm">Available Now</span>
+            <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white whimsical-serif mt-2">Mystical Chaos: Finding the Secret Scrolls</h2>
+            <p className="text-slate-600 dark:text-slate-400 mt-2 text-lg">The first book in the educational adventure series</p>
           </div>
         </div>
 
-        <div 
-          ref={scrollContainerRef}
-          className="flex overflow-x-auto gap-8 pb-10 no-scrollbar snap-x"
-        >
+        <div className="flex justify-center">
           {books.map((book) => (
-            <div key={book.id} className="min-w-[300px] md:min-w-[380px] snap-center group">
+            <div key={book.id} className="w-full max-w-[380px] group">
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl transition-transform duration-500 group-hover:-translate-y-4">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10"></div>
                 <div 
@@ -91,15 +51,17 @@ const BookCollection: React.FC = () => {
                   <h3 className="text-white text-2xl font-bold whimsical-serif">{book.title}</h3>
                 </div>
               </div>
-              <div className="mt-6">
+              <div className="mt-6 text-center">
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
                   {book.description}
                 </p>
                 <a 
-                  className="text-primary font-bold flex items-center gap-2 hover:gap-3 transition-all" 
+                  className="text-primary font-bold flex items-center justify-center gap-2 hover:gap-3 transition-all" 
                   href={book.amazonUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  View on Amazon <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                  Get Your Copy on Amazon <span className="material-symbols-outlined text-sm">arrow_forward</span>
                 </a>
               </div>
             </div>
