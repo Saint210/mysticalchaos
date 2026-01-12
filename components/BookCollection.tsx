@@ -9,7 +9,7 @@ const books: Book[] = [
     title: 'The Sleep Chamber Vortex',
     description: 'Leon\'s journey begins as he\'s cast through the mysterious sleep chamber vortex into a chaotic world. He meets his first masters and discovers the genetic imprinting that holds the key to hidden knowledge.',
     imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCKWpYux89r0TmSEs8jNET7sENnVYqBixcH0lDkWXkGsU_pYF5pBK1iqqN8JjTW_1OKViNy02WiEZIB1rtR1XATz2BcUwbhDFHoSuGuZNjvraJJ-CtzdGk-qNmGUSCXHM9SaSPVGlzelB3YyuH6qFFYuR2o4e-sP9RiWvSP2X35KNHpVjjLEr1gLQRMDortGbZgaxKPtH6EW1BAW7VJNaBE5oK_1uA_X3gBTAAdZue7R99Nvq8_f5prHNh1BfUYvHpkOk1c3Baiu-c',
-    amazonUrl: '#'
+    amazonUrl: 'https://www.amazon.com/Mystical-Chaos-Journey-Sean-Hamilton/dp/1733822313'
   },
   {
     id: '2',
@@ -17,7 +17,7 @@ const books: Book[] = [
     title: 'The Ancient Ways',
     description: 'Leon delves deeper into the old methods and hidden knowledge. He learns brain function activities, self-healing techniques, and begins to understand the true scope of his latent powers.',
     imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAA-ZQy5kc5nk1ZZUuQkaV9a7QKLfh3MV7lc-TcDfAme4grNjO-Fmn9nHU9bSI8I7sKUpgG16aFitlKs0O9mNGhAAKeHZjb4uSpMTofOlI9GQjiM9KZweQkO-ZwlDbU7gLpsInExTKfW1Ls5sx7v17_mwpO32JnVW7vTvbamx6C8_8MVz49eHa_MRVZTgNzTbscQaE8_tbhwup00gqANOZHhoUAz261O1RrdFPmgdOn9uDtFcAuKN2godHa_hG5BwdPh0VS_rZWNM',
-    amazonUrl: '#'
+    amazonUrl: 'https://www.amazon.com/Mystical-Chaos-Journey-Sean-Hamilton/dp/1733822313'
   },
   {
     id: '3',
@@ -25,7 +25,7 @@ const books: Book[] = [
     title: 'Masters of the Lost Arts',
     description: 'The culmination of Leon\'s training as he masters survival skills, advanced healing techniques, and unlocks the full potential of his genetic imprinting. The answers to how and why he came to this world are finally revealed.',
     imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB_ULdrcuFgGASZWdsfGUxUfAUxK5T6ySDxR2_IPJahevUNdkbEcCraUZNrb5Q7YzhViw7-pwp94ig65khW-3P0vp_udZukLWGsMEnoOwnUHKi8VMQGWvfPibuqR-fjAhuTYod-DYysyyrjQuGDruFLM4bh7XGVIsdPrRVAtNtoFIEQj6c9MsEsc0h2CCTOl1ANT2J52jW26GcdN-e6CA2XElfyhQPrv13uIGh_pLFgNia9FJOWEeKntwnH6REupUe-lymwdzO8Ho',
-    amazonUrl: '#'
+    amazonUrl: 'https://www.amazon.com/Mystical-Chaos-Journey-Sean-Hamilton/dp/1733822313'
   }
 ];
 

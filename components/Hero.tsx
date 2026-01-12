@@ -30,9 +30,14 @@ const Hero: React.FC = () => {
             Cast through a <strong>sleep chamber vortex</strong> into a world of chaos and mystery. Learn <strong>ancient techniques</strong> alongside Leon as he masters hidden knowledge, self-healing, and survival skills from the masters who guide his path.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-primary hover:bg-primary/90 text-white text-lg font-bold px-10 py-4 rounded-xl transition-transform hover:scale-105 shadow-xl shadow-primary/40">
+            <a 
+              href="https://www.amazon.com/Mystical-Chaos-Journey-Sean-Hamilton/dp/1733822313" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-primary hover:bg-primary/90 text-white text-lg font-bold px-10 py-4 rounded-xl transition-transform hover:scale-105 shadow-xl shadow-primary/40 inline-block text-center"
+            >
               Shop on Amazon US
-            </button>
+            </a>
             <button className="bg-white/10 hover:bg-white/20 text-white text-lg font-bold px-10 py-4 rounded-xl backdrop-blur-sm border border-white/30 transition-all">
               Discover the World
             </button>
