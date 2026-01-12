@@ -21,7 +21,8 @@ export default defineConfig(({ mode }) => {
       },
       build: {
         assetsDir: 'assets',
-        copyPublicDir: true
+        copyPublicDir: true,
+        publicDir: 'public'
       }
     };
 });
