@@ -8,7 +8,7 @@ const books: Book[] = [
     label: 'Book One',
     title: 'Mystical Chaos: The Journey Begins',
     description: 'Cast through the sleep chamber vortex into a world of chaos and mystery. Join Leon as he meets his first masters and discovers the genetic imprinting that holds the key to ancient knowledge and hidden powers.',
-    imageUrl: 'https://raw.githubusercontent.com/Saint210/mysticalchaos/main/public/images/mystical-chaos-the-journey-begins.png',
+    imageUrl: 'https://picsum.photos/seed/mystical-chaos-journey-begins/380/500.jpg',
     amazonUrl: 'https://www.amazon.com/Mystical-Chaos-Journey-Sean-Hamilton/dp/1733822313',
     status: 'available'
   },
@@ -17,7 +17,7 @@ const books: Book[] = [
     label: 'Book Two',
     title: 'MYSTICAL CHAOS: Out of the Elemental Field',
     description: 'Coming soon: Leon delves deeper into the old methods and hidden knowledge. He learns brain function activities, self-healing techniques, and begins to understand the true scope of his latent powers.',
-    imageUrl: 'https://raw.githubusercontent.com/Saint210/mysticalchaos/main/public/images/out-of-elemental-field.jpg',
+    imageUrl: 'https://picsum.photos/seed/out-of-elemental-field/380/500.jpg',
     amazonUrl: '#',
     status: 'coming-soon'
   },
@@ -26,7 +26,7 @@ const books: Book[] = [
     label: 'Book Three',
     title: 'MYSTICAL CHAOS: Seven Wise Sages',
     description: 'Coming soon: The culmination of Leon\'s training as he masters survival skills, advanced healing techniques, and unlocks the full potential of his genetic imprinting.',
-    imageUrl: 'https://raw.githubusercontent.com/Saint210/mysticalchaos/main/public/images/seven-wise-sages.jpg',
+    imageUrl: 'https://picsum.photos/seed/seven-wise-sages/380/500.jpg',
     amazonUrl: '#',
     status: 'coming-soon'
   },
@@ -35,7 +35,7 @@ const books: Book[] = [
     label: 'Book Four',
     title: 'MYSTICAL CHAOS: The Temple of Hidden Knowledge',
     description: 'Coming soon: Leon\'s ultimate test awaits as he enters the ancient temple where all knowledge converges. The final secrets of the mystical chaos are revealed.',
-    imageUrl: 'https://raw.githubusercontent.com/Saint210/mysticalchaos/main/public/images/temple-of-hidden-knowledge.jpg',
+    imageUrl: 'https://picsum.photos/seed/temple-of-hidden-knowledge/380/500.jpg',
     amazonUrl: '#',
     status: 'coming-soon'
   },
@@ -44,7 +44,7 @@ const books: Book[] = [
     label: 'Book Five',
     title: 'MYSTICAL CHAOS: Controlling the Elements',
     description: 'Coming soon: Leon masters the fundamental forces of nature as he learns to control earth, air, fire, and water through ancient techniques and mental discipline.',
-    imageUrl: 'https://raw.githubusercontent.com/Saint210/mysticalchaos/main/public/images/controlling-the-elements.jpg',
+    imageUrl: 'https://picsum.photos/seed/controlling-the-elements/380/500.jpg',
     amazonUrl: '#',
     status: 'coming-soon'
   },
@@ -53,7 +53,7 @@ const books: Book[] = [
     label: 'Book Six',
     title: 'MYSTICAL CHAOS: Sword of Truth',
     description: 'Coming soon: The path of the warrior reveals itself as Leon discovers that true strength comes from mastering both the blade and the mind.',
-    imageUrl: 'https://raw.githubusercontent.com/Saint210/mysticalchaos/main/public/images/sword-of-truth.jpg',
+    imageUrl: 'https://picsum.photos/seed/sword-of-truth/380/500.jpg',
     amazonUrl: '#',
     status: 'coming-soon'
   },
@@ -62,7 +62,7 @@ const books: Book[] = [
     label: 'Book Seven',
     title: 'MYSTICAL CHAOS: The Great Awakening',
     description: 'Coming soon: Leon\'s consciousness expands beyond physical limits as he unlocks the dormant abilities within his genetic imprinting.',
-    imageUrl: 'https://raw.githubusercontent.com/Saint210/mysticalchaos/main/public/images/the-great-awakening.jpg',
+    imageUrl: 'https://picsum.photos/seed/the-great-awakening/380/500.jpg',
     amazonUrl: '#',
     status: 'coming-soon'
   },
@@ -71,7 +71,7 @@ const books: Book[] = [
     label: 'Book Eight',
     title: 'MYSTICAL CHAOS: The Way Back Home',
     description: 'Coming soon: The final journey begins as Leon discovers the truth about his origins and the path that leads back to his own world.',
-    imageUrl: 'https://raw.githubusercontent.com/Saint210/mysticalchaos/main/public/images/the-way-back-home.jpg',
+    imageUrl: 'https://picsum.photos/seed/the-way-back-home/380/500.jpg',
     amazonUrl: '#',
     status: 'coming-soon'
   }
