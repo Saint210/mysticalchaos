@@ -1,6 +1,7 @@
 
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Book } from '../types';
+import WaitingListModal from './WaitingListModal';
 
 const books: Book[] = [
   {
@@ -79,6 +80,8 @@ const books: Book[] = [
 
 const BookCollection: React.FC = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const [selectedBook, setSelectedBook] = useState<string | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollContainerRef.current) {
@@ -86,6 +89,16 @@ const BookCollection: React.FC = () => {
       const scrollTo = direction === 'left' ? scrollLeft - clientWidth : scrollLeft + clientWidth;
       scrollContainerRef.current.scrollTo({ left: scrollTo, behavior: 'smooth' });
     }
+  };
+
+  const openWaitingList = (bookTitle: string) => {
+    setSelectedBook(bookTitle);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedBook(null);
   };
 
   return (
@@ -150,16 +163,31 @@ const BookCollection: React.FC = () => {
                     Buy Now on Amazon <span className="material-symbols-outlined text-sm">shopping_cart</span>
                   </a>
                 ) : (
-                  <span className="text-slate-400 font-medium flex items-center gap-2">
-                    <span className="material-symbols-outlined text-sm">schedule</span>
-                    Coming Soon
-                  </span>
+                  <div className="space-y-3">
+                    <button
+                      onClick={() => openWaitingList(book.title)}
+                      className="w-full bg-primary text-white py-3 px-4 rounded-lg font-bold hover:bg-primary/90 transition-colors flex items-center justify-center gap-2"
+                    >
+                      <span className="material-symbols-outlined text-sm">notifications</span>
+                      Join Waiting List
+                    </button>
+                    <span className="text-slate-400 font-medium flex items-center gap-2 text-sm">
+                      <span className="material-symbols-outlined text-sm">schedule</span>
+                      Coming Soon
+                    </span>
+                  </div>
                 )}
               </div>
             </div>
           ))}
         </div>
       </div>
+      
+      <WaitingListModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        bookTitle={selectedBook || ''}
+      />
     </section>
   );
 };
